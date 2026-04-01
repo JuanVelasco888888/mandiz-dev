@@ -55,7 +55,7 @@ client/public/images/mandiz2.jpeg
 git init
 git add .
 git commit -m "feat: proyecto inicial Mandiz Dev"
-git remote add origin https://github.com/TU_USUARIO/mandiz-dev.git
+git remote add origin https://github.com/JuanVelasco888888/mandiz-dev.git
 git push -u origin main
 ```
 
