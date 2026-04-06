@@ -53,14 +53,14 @@ export default function Contact() {
                     <span>📧</span>
                     <div>
                       <strong>Email</strong>
-                      <p>contacto@mandizdev.com</p>
+                      <p>mandizcontacto@gmail.com</p>
                     </div>
                   </div>
                   <div className="quick-item">
                     <span>💬</span>
                     <div>
                       <strong>WhatsApp</strong>
-                      <p>+57 300 123 4567</p>
+                      <p>+57 300 8848006</p>
                     </div>
                   </div>
                   <div className="quick-item">
