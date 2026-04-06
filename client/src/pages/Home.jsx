@@ -11,7 +11,7 @@ const stats = [
   { value: '99%', label: 'Satisfacción' },
 ]
 
-const techs = ['React', 'Node.js', 'MongoDB', 'Python', 'AWS', 'Docker']
+const techs = ['React(Native)', 'Node.js','Python', 'AWS', 'Docker','Kotlin','Android Studio','Flutter']
 
 export default function Home() {
   return (
