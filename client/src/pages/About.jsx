@@ -10,9 +10,9 @@ const values = [
 ]
 
 const team = [
-  { name: 'Juan Mandiz', role: 'CEO & Fullstack Dev', emoji: '👨‍💻' },
-  { name: 'Ana Torres', role: 'UI/UX Designer', emoji: '🎨' },
-  { name: 'Carlos Ríos', role: 'Backend Engineer', emoji: '⚙️' },
+  { name: 'Alvaro Mantilla', role: 'CEO & Fullstack Dev', emoji: '👨‍💻' },
+  { name: 'Andres Ballesteros', role: 'Auxiliar Administrativo', emoji: '🗂️' },
+  { name: 'Juan Velasco', role: 'Backend Engineer', emoji: '⚙️' },
 ]
 
 export default function About() {
@@ -36,7 +36,7 @@ export default function About() {
                 <p>
                   Mandiz Dev nació en 2019 con una misión simple: hacer que la tecnología de calidad
                   esté al alcance de todo tipo de negocio. Empezamos como freelancers y hoy somos
-                  un equipo completo con más de 50 proyectos entregados.
+                  un equipo completo con más de 50 proyectos.
                 </p>
                 <p>
                   Nos especializamos en construir productos digitales que resuelven problemas reales:
