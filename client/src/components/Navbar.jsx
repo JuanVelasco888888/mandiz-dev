@@ -50,7 +50,7 @@ export default function Navbar() {
         </ul>
 
         <NavLink to="/contacto" className="btn-primary nav-cta">
-          Empezar
+          Empecemos →
         </NavLink>
 
         <button className="hamburger" onClick={() => setOpen(!open)} aria-label="Menú">

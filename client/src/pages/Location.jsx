@@ -4,8 +4,8 @@ import './Location.css'
 
 const info = [
   { icon: '📍', label: 'Dirección', value: 'Bucaramanga, Santander, Colombia' },
-  { icon: '📞', label: 'Teléfono', value: '+57 300 123 4567' },
-  { icon: '✉️', label: 'Email', value: 'contacto@mandizdev.com' },
+  { icon: '📞', label: 'Teléfono', value: '+57 300 8848006' },
+  { icon: '✉️', label: 'Email', value: 'mandizcontacto@gmail.com' },
   { icon: '🕐', label: 'Horario', value: 'Lun – Vie: 8am – 6pm' },
 ]
 
