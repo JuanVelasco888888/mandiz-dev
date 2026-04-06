@@ -15,6 +15,27 @@ const item = {
   show: { opacity: 1, y: 0, transition: { duration: 0.55, ease: [0.4, 0, 0.2, 1] } }
 }
 
+const featuredProjects = [
+  {
+    id: 'cicloil',
+    title: 'CicloOil',
+    description: 'Innovación para dar nueva vida al aceite industrial usado',
+    image: '/images/CicloOil.png',
+  },
+  {
+    id: 'moneymite',
+    title: 'MoneyMite',
+    description: 'Realice un seguimiento de los gastos, ahorre de forma inteligente y alcance objetivos financieros con MoneyMite',
+    image: '/images/MoneyMite.png',
+  },
+  {
+    id: 'preventia',
+    title: 'Preventia',
+    description: 'Agilizar el mantenimiento predictivo y preventivo de maquinaria',
+    image: '/images/Preventia.png',
+  },
+]
+
 export default function Projects() {
   const [projects, setProjects] = useState([])
   const [loading, setLoading] = useState(true)
@@ -42,8 +63,25 @@ export default function Projects() {
             </p>
           </FadeIn>
 
-          {/* Filters */}
+          {/* Featured Projects */}
           <FadeIn delay={0.1}>
+            <div className="featured-grid">
+              {featuredProjects.map(fp => (
+                <div key={fp.id} className="featured-card">
+                  <div className="featured-img-wrap">
+                    <img src={fp.image} alt={fp.title} className="featured-img" />
+                  </div>
+                  <div className="featured-info">
+                    <h3 className="featured-title">{fp.title}</h3>
+                    <p className="featured-desc">{fp.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </FadeIn>
+
+          {/* Filters */}
+          <FadeIn delay={0.2}>
             <div className="filter-bar">
               {categories.map(cat => (
                 <button
