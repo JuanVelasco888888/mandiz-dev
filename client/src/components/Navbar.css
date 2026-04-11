@@ -65,13 +65,22 @@
   flex-shrink: 0;
 }
 
+/* ── Hamburger ── */
 .hamburger {
   display: none;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 5px;
   background: none;
-  padding: 4px;
+  border: none;
+  padding: 8px;
   margin-left: auto;
+  cursor: pointer;
+  z-index: 1100;
+  /* Fondo semitransparente para que sea visible sin scroll */
+  background: rgba(5, 8, 16, 0.4);
+  border-radius: 8px;
 }
 
 .bar {
@@ -81,8 +90,22 @@
   border-radius: 2px;
   transition: var(--transition);
   display: block;
+  transform-origin: center;
 }
 
+/* Animación X al abrir */
+.bar.open:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.bar.open:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+.bar.open:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ── Menú móvil ── */
 .mobile-menu {
   display: flex;
   flex-direction: column;
@@ -101,9 +124,39 @@
   transition: color 0.2s;
 }
 
-.mobile-link:hover, .mobile-link.active { color: var(--accent); }
+.mobile-link:last-child {
+  border-bottom: none;
+}
 
+.mobile-link:hover,
+.mobile-link.active { color: var(--accent); }
+
+/* ── Responsive ── */
 @media (max-width: 900px) {
-  .nav-links, .nav-cta { display: none; }
-  .hamburger { display: flex; }
+  .nav-links,
+  .nav-cta {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-inner {
+    gap: 0;
+    padding: 0 16px;
+  }
+
+  /* Asegurar fondo en navbar al estar en top en móvil */
+  .navbar:not(.scrolled) {
+    background: rgba(5, 8, 16, 0.75);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-logo {
+    font-size: 1.1rem;
+  }
 }
