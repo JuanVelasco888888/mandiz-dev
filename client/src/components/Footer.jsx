@@ -23,8 +23,8 @@ export default function Footer() {
           </div>
           <div className="footer-col">
             <h4>Contacto</h4>
-            <a href="mailto:contacto@mandizdev.com">contacto@mandizdev.com</a>
-            <a href="tel:+573001234567">+57 300 123 4567</a>
+            <a href="mailto:contacto@mandizdev.com">mandizcontacto@gmail.com</a>
+            <a href="tel:+573001234567">+57 300 8848006</a>
             <NavLink to="/ubicacion">Ver ubicación</NavLink>
           </div>
         </div>
