@@ -6,6 +6,9 @@
   z-index: 1000;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   padding: 20px 0;
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
 }
 
 .navbar.scrolled {
@@ -145,6 +148,9 @@
   .nav-inner {
     gap: 0;
     padding: 0 16px;
+    /* Evitar que el contenido desborde */
+    width: 100%;
+    overflow: hidden;
   }
 
   /* Asegurar fondo en navbar al estar en top en móvil */
